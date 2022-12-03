@@ -30,13 +30,16 @@ rucksacks_undivided = [item[0].union(item[1])
 
 score_badge_items = 0
 for i in range(0, len(rucksacks_undivided), 3):
-    common_item = rucksacks_undivided[i] & rucksacks_undivided[i +
-                                                               1] & rucksacks_undivided[i+2]
+    common_item = rucksacks_undivided[i] & rucksacks_undivided[i+1] & rucksacks_undivided[i+2]
     score_badge_items += prios[common_item.pop()]
 
 print(f'total priority score of team badges: {score_badge_items}')
 
+
 # below: another solution with more functions (but also longer code)
+
+
+
 
 """ import string
 
