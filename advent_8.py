@@ -53,7 +53,7 @@ def visual_scoring(i, j, forest):
 
 def load_data(fname):
     forest = []
-    with open('8_input.txt') as f:
+    with open(fname) as f:
         i = 0
         for line in f:
             forest.append([])
