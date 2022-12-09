@@ -30,8 +30,6 @@ def visible(i, j, forest):
     else:
         return False
 
-    return (visible_from_left or visible_from_top)
-
 
 def calculate_score(arr, current_height):
     score = 0
